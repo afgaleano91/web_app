@@ -21,6 +21,10 @@ public class Persona {
     public void adopt(Persona persona){
     }
 
+    private Child child;
+    private Mother mother;
+    private Father father;
+
     public String getFull_name() {
         return full_name;
     }
