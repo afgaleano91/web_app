@@ -19,6 +19,38 @@ public class Child {
     @JoinColumn(name = "id_child")
     private Persona person;
 
+    @ManyToOne
+    @PrimaryKeyJoinColumn
+    private Father father;
+
+    public Persona getPerson() {
+        return person;
+    }
+
+    public void setPerson(Persona person) {
+        this.person = person;
+    }
+
+    public Father getFather() {
+        return father;
+    }
+
+    public void setFather(Father father) {
+        this.father = father;
+    }
+
+    public Mother getMother() {
+        return mother;
+    }
+
+    public void setMother(Mother mother) {
+        this.mother = mother;
+    }
+
+    @ManyToOne
+    @PrimaryKeyJoinColumn
+    private Mother mother;
+
     public int getId_child() {
         return id_child;
     }

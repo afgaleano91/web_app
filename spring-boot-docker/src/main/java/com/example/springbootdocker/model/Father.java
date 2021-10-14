@@ -19,9 +19,13 @@ public class Father {
     @JoinColumn(name = "id_father")
     private Persona person;
 
-    @ManyToOne
-    @PrimaryKeyJoinColumn
-    private Child child;
+    public Persona getPerson() {
+        return person;
+    }
+
+    public void setPerson(Persona person) {
+        this.person = person;
+    }
 
     public int getId_father() {
         return id_father;
