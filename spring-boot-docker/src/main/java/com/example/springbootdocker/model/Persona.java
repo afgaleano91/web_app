@@ -13,13 +13,16 @@ public class Persona {
     private String full_name;
     private String birth;
 
-    public Persona(int id, String full_name, String birth, Mother mother, Father father) {
+    public Persona() {
+    }
+
+    public Persona(int id, String full_name, String birth) {
         this.id = id;
         this.full_name = full_name;
         this.birth = birth;
-        this.mother = mother;
-        this.father = father;
     }
+
+
 
     /**
     * Función pendiente por definir
@@ -28,14 +31,6 @@ public class Persona {
 
     }
     */
-
-   @OneToOne
-   @PrimaryKeyJoinColumn
-    private Mother mother;
-
-   @OneToOne
-   @PrimaryKeyJoinColumn
-    private Father father;
 
     public int getId() {
         return id;
@@ -46,7 +41,7 @@ public class Persona {
     }
 
 
-    public Mother getMother() {
+   /* public Mother getMother() {
         return mother;
     }
 
@@ -60,7 +55,7 @@ public class Persona {
 
     public void setFather(Father father) {
         this.father = father;
-    }
+    }*/
 
     public String getFull_name() {
         return full_name;
