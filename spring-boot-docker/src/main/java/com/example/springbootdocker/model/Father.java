@@ -10,6 +10,9 @@ public class Father {
     //@GeneratedValue(strategy = GenerationType.AUTO)
     private int id_father;
 
+    public Father() {
+    }
+
     public Father(int id_father) {
         this.id_father = id_father;
     }
