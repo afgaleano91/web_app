@@ -10,6 +10,9 @@ public class Child {
     //@GeneratedValue(strategy = GenerationType.AUTO)
     private int id_child;
 
+    public Child() {
+    }
+
     public Child(int id_child) {
         this.id_child = id_child;
     }
