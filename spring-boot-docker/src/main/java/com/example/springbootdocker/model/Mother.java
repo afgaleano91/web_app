@@ -10,6 +10,9 @@ public class Mother {
     //@GeneratedValue(strategy = GenerationType.AUTO)
     private int id_mother;
 
+    public Mother() {
+    }
+
     public Mother(int id_mother) {
         this.id_mother = id_mother;
     }
